@@ -141,7 +141,6 @@ public class MyLinkedList<E> implements IList<E> {
 		return -1;
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public E remove(int index) {
 		checkIndex(index);

@@ -159,10 +159,10 @@ public class MyLinkedList<E> implements IList<E> {
 			nodeForRemove.next.prev = nodeForRemove.prev;
 		}
 
-		Node<E> victim = nodeForRemove;
+		E victim = nodeForRemove.data;
 		nodeForRemove = null;
 		size--;
-		return (E) victim;
+		return victim;
 
 	}
 
